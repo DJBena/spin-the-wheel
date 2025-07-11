@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spin The Wheel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wheel-container">
+      <div class="arrow"></div>
+      <canvas id="wheel" width="300" height="300"></canvas>
+      <button id="spinButton">SPIN</button>
+    </div>
+
+    <div class="input-section">
+      <label for="numSectors">Broj sektora:</label>
+      <input type="number" id="numSectors" min="2" max="30" value="6"/>
+      <button id="generate">Generiraj sektore</button>
+    </div>
+
+    <div class="sectors-list" id="sectorsList"></div>
+    <audio id="spinSound" src="assets/wood_tap.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
